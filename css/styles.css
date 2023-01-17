@@ -180,14 +180,17 @@ ul {
 
 .hero {
   background-color: #2e2f42;
-  padding: 168px 0;
+  padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../imegis/people-office\ 1.png);
+    url(../imegis/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 1440;
+  height: 600;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -255,6 +258,10 @@ ul {
   padding-bottom: 120px;
 }
 
+.section-w {
+  padding-top: 0;
+}
+
 .visually-text {
   display: flex;
   gap: 24px;
@@ -281,7 +288,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 8px;
- 
 }
 
 .icon-vector::before {
@@ -375,7 +381,6 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
 }
 
 .section-c {
@@ -397,7 +402,7 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
   margin-top: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 
 .section-soc {
@@ -405,11 +410,25 @@ ul {
   justify-content: center;
   gap: 24px;
 }
-.soc-icons {
+
+.soc-icon-s {
+  border-radius: 50%;
+}
+
+.soc-icon-s {
   width: 40px;
   height: 40px;
 }
-.soc-icon-link {
+
+.soc-icon-s {
+  background-color: #4d5ae5;
+}
+
+.soc-icon-s :hover {
+  background-color: #404bbf;
+}
+
+.soc-icon-link-s {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -417,6 +436,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.soc-icon-link-s :hover {
+  background-color: #404bbf;
 }
 
 .visually-hidden {
@@ -479,38 +502,43 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-.client-p {
-  padding-top: 130px;
-  padding-bottom: 88px;
+
+.client-item {
 }
 
 .client-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
-.client-item {
-  display: flex;
-  width: 168px;
-  height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-}
 .client-list :hover {
   border-color: #404bbf;
 }
-.client-list :hover .client-icon {
-  fill: #404bbf;
-}
+
 .client-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .client-icon :hover {
   fill: #404bbf;
+}
+.client-list-link {
+  color: #8e8f99;
+}
+
+.client-list-link :hover {
+  color: #404bbf;
+}
+
+.client-list-link {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -576,6 +604,6 @@ footer {
 
   color: #ffffff;
 }
-.soc-icons :hover {
+.soc-icons-f :hover {
   background-color: #31d0aa;
 }
