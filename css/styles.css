@@ -73,7 +73,11 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
-
+.header-m {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .header-first {
   display: flex;
   justify-content: first baseline;
@@ -246,6 +250,8 @@ ul {
   border-radius: 4px;
   padding: 12px 24px;
   text-align: center;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hiro-but-p:hover {
@@ -467,6 +473,11 @@ ul {
 .visually-photo-l {
   padding-top: 24px;
 }
+
+.visually-photo-l :hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .sectionh2-p {
   font-family: "Roboto";
   font-style: normal;
